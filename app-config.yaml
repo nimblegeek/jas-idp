@@ -64,12 +64,19 @@ techdocs:
 
 auth:
   # see https://backstage.io/docs/auth/ to learn about auth providers
+  environment: development
   providers:
     # See https://backstage.io/docs/auth/guest/provider
     guest: {}
-
-scaffolder:
-  # see https://backstage.io/docs/features/software-templates/configuration for software template options
+    github:
+      development:
+        clientId: YOUR CLIENT ID
+        clientSecret: YOUR CLIENT SECRET
+        signIn:
+          resolvers:
+            # Matches the GitHub username with the Backstage user entity name.
+            # See https://backstage.io/docs/auth/github/provider#resolvers for more resolvers.
+            - resolver: usernameMatchingUserEntityName
 
 catalog:
   import:
