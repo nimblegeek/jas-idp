@@ -1,7 +1,5 @@
 # jas-backend
 
-This plugin backend was templated using the Backstage CLI. You should replace this text with a description of your plugin backend.
-
 ## Installation
 
 This plugin is installed via the `@internal/plugin-jas-backend-backend` package. To install it to your backend package, run the following command:
