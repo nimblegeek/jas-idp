@@ -12,8 +12,9 @@ const backend = createBackend();
 
 backend.add(import('@backstage/plugin-app-backend'));
 backend.add(import('@backstage/plugin-proxy-backend'));
-backend.add(import('@backstage/plugin-scaffolder-backend'));
-backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
+// Temporarily disabled due to isolated-vm issue
+// backend.add(import('@backstage/plugin-scaffolder-backend'));
+// backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
 backend.add(import('@backstage/plugin-techdocs-backend'));
 
 // auth plugin
@@ -53,5 +54,6 @@ backend.add(import('@backstage/plugin-search-backend-module-techdocs'));
 // kubernetes
 backend.add(import('@backstage/plugin-kubernetes-backend'));
 
-backend.add(import('@internal/plugin-jas-backend-backend'));
+// Temporarily disabled due to config issue
+// backend.add(import('@internal/plugin-jas-backend-backend'));
 backend.start();
